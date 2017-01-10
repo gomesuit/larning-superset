@@ -11,7 +11,7 @@ pip install --upgrade setuptools pip
 
 
 pip install superset
-fabmanager create-admin --app superset
+#fabmanager create-admin --app superset
 superset db upgrade
 superset load_examples
 
