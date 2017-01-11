@@ -14,4 +14,5 @@ pip install superset
 #fabmanager create-admin --app superset
 superset db upgrade
 superset load_examples
+superset init
 
