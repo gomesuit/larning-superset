@@ -16,3 +16,7 @@ superset db upgrade
 superset load_examples
 superset init
 
+cp /vagrant/superset.service /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable superset
+
