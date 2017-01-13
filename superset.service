@@ -4,8 +4,9 @@ Requires=network-online.target
 After=network-online.target
 
 [Service]
+EnvironmentFile=-/etc/sysconfig/superset.conf
 Restart=on-failure
-ExecStart=/bin/superset runserver -p 8088
+ExecStart=/bin/superset runserver -p $PORT -w $WORKERS
 ExecReload=/bin/kill -HUP $MAINPID
 KillSignal=SIGINT
 

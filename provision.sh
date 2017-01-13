@@ -17,6 +17,7 @@ superset load_examples
 superset init
 
 cp /vagrant/superset.service /etc/systemd/system/
+cp /vagrant/superset.conf /etc/sysconfig/
 systemctl daemon-reload
 systemctl enable superset
 
