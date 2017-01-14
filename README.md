@@ -8,9 +8,8 @@
 
 ## superset起動
 ```
-sudo su -
 fabmanager create-admin --app superset
-systemctl start superset
+sudo systemctl start superset
 ```
 
 ## ブラウザからアクセス
